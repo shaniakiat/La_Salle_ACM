@@ -1,0 +1,29 @@
+.home {
+  background-color: var(--Main);
+  padding: 20%;
+}
+
+.home h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: var(--DarkShade);
+  font-size: 3.5rem;
+  line-height: 5rem;
+  margin: 0;
+  text-align: -webkit-center;
+}
+
+.home span {
+  font-weight: 700;
+}
+.tw {
+  font-family: "Roboto Mono", monospace;
+  color: var(--LightShade);
+  font-size: 2rem;
+  margin: 0;
+  text-align: -webkit-center;
+}
+.tw::after {
+  content: " ";
+  white-space: pre;
+}

@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Mono&display=swap");
+
+:root {
+  --LightShade: #a4b0be;
+  --LightAccent: #f5f8f8;
+  --Main: #eabf7f;
+  --DarkAccent: #e17990;
+  --DarkShade: #24384f;
+}
+
+body {
+  background: var(--Main);
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+}
+/* 
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Roboto Mono', monospace; */
