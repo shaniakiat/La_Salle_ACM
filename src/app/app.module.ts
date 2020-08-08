@@ -14,6 +14,7 @@ import { ResourcesComponent } from './components/resources/resources.component';
 import { ProgrammingTeamComponent } from './components/programming-team/programming-team.component';
 import { CsDepartmentComponent } from './components/cs-department/cs-department.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ContactComponent } from './components/contact/contact.component';
     ProgrammingTeamComponent,
     CsDepartmentComponent,
     ContactComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,14 @@
 .home {
   background-color: var(--Main);
-  padding: 20%;
+  padding: 42vh 0;
 }
 
 .home h1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   color: var(--DarkShade);
-  font-size: 3.5rem;
-  line-height: 5rem;
+  font-size: 6rem;
+  line-height: 8rem;
   margin: 0;
   text-align: -webkit-center;
 }

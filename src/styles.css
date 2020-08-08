@@ -13,8 +13,13 @@ body {
   margin: 0;
 }
 
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
 .container {
-  height: 100vh;
 }
 /* 
 font-family: 'Josefin Sans', sans-serif;
