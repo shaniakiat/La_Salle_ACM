@@ -2,3 +2,47 @@
   display: grid;
   grid-template-columns: 20% 80%;
 }
+
+nav {
+  font-family: "Roboto Mono", monospace;
+  margin-top: 45vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 70%;
+  text-align: right;
+}
+
+.nav .nav-item {
+  list-style: none;
+  line-height: 1.5;
+}
+
+.nav .nav-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--DarkShade);
+  text-align: right;
+  cursor: pointer;
+}
+
+.nav .nav-link:hover {
+  color: var(--DarkAccent);
+}
+
+.nav .nav-link.active {
+  border-right: 6px solid var(--DarkAccent);
+  padding-right: 3px;
+  color: var(--DarkAccent) !important;
+  transform: scale(1.5);
+  transition: all 0.1s;
+}
+
+.right {
+  height: 100vh;
+  position: relative;
+  overflow-y: scroll;
+}

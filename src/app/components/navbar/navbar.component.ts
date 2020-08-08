@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
 
 @Component({
   selector: 'app-navbar',
@@ -10,4 +9,14 @@ export class NavbarComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  currentSection = 'home';
+
+  onSectionChange(sectionId: string) {
+    this.currentSection = sectionId;
+  }
+
+  scrollTo(section) {
+    document.querySelector('#' + section).scrollIntoView();
+  }
 }

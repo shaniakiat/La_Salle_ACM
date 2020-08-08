@@ -1,8 +1,62 @@
 <div class="app">
   <div class="left">
-    <app-navbar></app-navbar>
+    <nav id="navbar">
+      <ul class="nav">
+        <li class="nav-item" (click)="scrollTo('home')">
+          <a class="nav-link" [ngClass]="{ active: currentSection === 'home' }"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item" (click)="scrollTo('about')">
+          <a class="nav-link" [ngClass]="{ active: currentSection === 'about' }"
+            >About</a
+          >
+        </li>
+        <li class="nav-item" (click)="scrollTo('officers')">
+          <a
+            class="nav-link"
+            [ngClass]="{ active: currentSection === 'officers' }"
+            >Officers</a
+          >
+        </li>
+        <li class="nav-item" (click)="scrollTo('resources')">
+          <a
+            class="nav-link"
+            [ngClass]="{ active: currentSection === 'resources' }"
+            >Resources</a
+          >
+        </li>
+        <li class="nav-item" (click)="scrollTo('programming-team')">
+          <a
+            class="nav-link"
+            [ngClass]="{ active: currentSection === 'programming-team' }"
+            >Programming Team</a
+          >
+        </li>
+        <li class="nav-item" (click)="scrollTo('cs-department')">
+          <a
+            class="nav-link"
+            [ngClass]="{ active: currentSection === 'cs-department' }"
+            >CS Department</a
+          >
+        </li>
+      </ul>
+    </nav>
   </div>
-  <div class="right">
-    <app-home></app-home>
+  <div
+    id="parentDiv"
+    scrollSpy
+    [spiedTags]="['DIV']"
+    (sectionChange)="onSectionChange($event)"
+    class="right"
+  >
+    <div id="home"><app-home></app-home></div>
+    <div id="about"><app-about></app-about></div>
+    <div id="officers"><app-officers></app-officers></div>
+    <div id="resources"><app-resources></app-resources></div>
+    <div id="programming-team">
+      <app-programming-team></app-programming-team>
+    </div>
+    <div id="cs-department"><app-cs-department></app-cs-department></div>
   </div>
 </div>
