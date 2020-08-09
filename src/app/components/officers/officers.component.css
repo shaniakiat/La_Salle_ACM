@@ -1,0 +1,45 @@
+.officers {
+  padding: 20vh;
+}
+
+.officers h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: var(--LightAccent);
+  font-size: 5rem;
+  line-height: 5rem;
+  margin: 0;
+  text-align-last: center;
+}
+
+.officers h2 {
+  font-family: "Roboto Mono", monospace;
+  color: var(--LightAccent);
+  font-size: 1.5rem;
+  margin: 0;
+  text-align-last: center;
+}
+
+.grid {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.officer {
+  padding: 20px;
+}
+
+.officers .officer h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.officers .officer h2 {
+  font-family: "Roboto Mono", monospace;
+  color: var(--DarkShade);
+  font-size: 1rem;
+  line-height: 2rem;
+}
